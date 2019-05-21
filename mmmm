@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogos | Loja quarrymen</title>
+	</head>
+	<body>
+		<h1>Jogos de video games e computadores</h1>
+		<nav>
+			<ul>
+			<li class="nav-item"><a href="../index.html">Home</a></li>
+			<li class="nav-item"><a href="../computadores/index.html">Computadores</a></li>
+			<li class="nav-item"><a href="../videogames/index.html">Video games</a></li>
+			<li >Jogos</li>
+			<li><a href="../smartphones/index.html">Smartphones</a></li>
+			<li><a href="../acessorios/index.html">Acessórios</a></li>
+			<li><a href="../contato.html">Contatos</a>	</li>
+			</ul>
+		</nav>
+		
+		<p>Temos todos tipos de eletrôniconicos para você</p>
+	
+		<div> 
+			<h2>God of war</h2>
+			<img src="../images/jogos/godofwar.jpg" alt="God of war" width="200" height="200"/>
+			<p>É um novo começo para Kratos. Vivendo como um homem longe da sombra dos deuses,<br/>
+			ele se aventura pelas selvagens florestas nórdicas com seu filho Atreus,<br/>
+			lutando para cumprir uma missão profundamente pessoal.<br/>
+			O Santa Monica Studio e o diretor de criação Cory Barlog lançam um novo começo para um dos personagens mais conhecidos dos jogos.<br/>
+			Vivendo como um homem, fora da sombra dos deuses,<br/>
+			Kratos deve se adaptar a terras desconhecidas,<br/>
+			ameaças inesperadas e a uma segunda oportunidade de ser pai.<br/>
+			Junto ao seu filho, Atreus, os dois vão se aventurar pelas selvagens florestas nórdicas<br/>
+			lutar para cumprir uma missão profundamente pessoal</p>
+		</div>
+		<div> 
+			<h2>Forza 7</h2>
+			<img src="../images/jogos/forza7.jpg" alt="Forza 7" width="200" height="200"/>
+			<p>As temporadas dinâmicas mudam tudo no maior festival automotivo do mundo.<br/>
+			Vá sozinho ou junte-se a outros para explorar a bela e histórica Grã-Bretanha em um mundo aberto compartilhado.<br/>
+			Colecione, modifique e dirija mais de 450 carros.<br/>
+			Corra, faça acrobacias, crie e explore – escolha o seu próprio caminho para se tornar um Horizon Superstar.</p>
+		</div>
+		<div> 
+			<h2>Mario odyssey</h2>
+			<img src="../images/jogos/mario.jpg" alt="Mario odyssey" width="200" height="200"/>
+			<p>Super Mario Odyssey é um jogo de plataforma desenvolvido pela Nintendo Entertainment Planning & Development e publicado pela Nintendo.<br/>
+			Foi lançado mundialmente em 27 de outubro de 2017 exclusivamente para o Nintendo Switch</p>
+		</div>
+		
+		<div> 
+			<h2>Red Dead Redemption II</h2>
+			<img src="../images/jogos/red.jpg" alt="Red Dead Redemption II" width="200" height="200"/>
+			<p>Red Dead Redemption II é um jogo eletrônico de ação-aventura western desenvolvido pela Rockstar Studios e publicado pela Rockstar Games.<br/>
+			Lançado mundialmente em 26 de outubro de 2018 para PlayStation 4 e Xbox One,<br/>
+			é uma prequela de Red Dead Redemption e o terceiro título da franquia Red Dead. </p>
+		</div>
+		<div> 
+			<h2> Call Of Duty Black Ops 4</h2>
+			<img src="../images/jogos/bo4.jpg" alt="Call Of Duty Black Ops 4" width="200" height="200"/>
+			<p>Call of Duty: Black Ops 4 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Treyarch e publicado pela Activision.<br/>
+			Foi lançado em 12 de outubro de 2018, para Microsoft Windows, Xbox One e Ps4</p>
+		</div>
+		<div> 
+			<h2> The last of us </h2>
+			<img src="../images/jogos/thelast.jpg" alt="the last of us" width="200" height="200"/>
+			<p>The Last of Us é um jogo eletrônico de ação-aventura e Survival horror desenvolvido pela Naughty Dog e publicado pela Sony Computer Entertainment.</br>
+			Ele foi lançado exclusivamente para PlayStation 3 em 14 de junho de 2013. </p>
+		</div>
+	</body>
+</html>
