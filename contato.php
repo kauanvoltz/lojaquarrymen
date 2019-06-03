@@ -9,19 +9,9 @@
 	<body>
 	<div class="container">
 		<h1>Entre em contato conosco</h1>
-		<nav class="col-10">
-			<ul class="nav">
-				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="computadores/index.html">Computadores</a></li>
-				<li class="nav-item"><a class="nav-link" href="videogames/index.html">Video games</a></li>
-				<li class="nav-item"><a class="nav-link" href="jogos/index.html">Jogos</a></li>
-				<li class="nav-item"><a class="nav-link" href="smartphones/index.html">Smartphones</a></li>
-				<li class="nav-item"><a class="nav-link" href="acessorios/index.html">Acessórios</a></li>
-				<li class="nav-item"><a class="nav-link"> Contatos </a></li>
-				<li class="nav-item position-absolute" style="right:0"><a  href="carrinho.html" class="nav-link nav-chart" > <img src ="images/home/carrinho.png" height="30" width="30"/> <span id="quantidadeProdutos" class="badge badge-primary">0</span></a></li> 
-			</ul>
-		</nav>
-		
+		<?php
+			include "menu.php";
+		?>
 		<p> Queremos ouvir você! entre em contato conosco</p>
 		<form action="enviarmensagem.php" method="post">
 			<div class="form-group">
