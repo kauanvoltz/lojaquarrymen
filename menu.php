@@ -1,4 +1,5 @@
 <?php
+session_start();
 class Menu
 {
 	public $nome;
@@ -47,7 +48,7 @@ $menus =
 	
 ];
 ?>
-<nav class="col-10">
+<nav class="col-11">
 	<ul class="nav">
 		<li class="nav-item "><a class="nav-link" href= "/"> Home</a></li>
 		<?php
@@ -62,9 +63,10 @@ $menus =
 		<li class="nav-item"><a class="nav-link" href="/contato.php">Contatos</a></li>
 		<li class="nav-item position-absolute" style="right:0"><a  href="/carrinho.php" class="nav-link nav-chart" > <img src ="/images/home/carrinho.png" height="30" width="30"/> <span id="quantidadeProdutos" class="badge badge-primary">0</span></a></li> 
 		<?php
-			$nomeUsuario=isset($_SESSION["nome_usuario"]) ? $_SESSION["nome_usuario"] : "";
+			
+			$nomeUsuario=isset($_SESSION["nomeUsuario"]) ? $_SESSION["nomeUsuario"] : "";
 			if ($nomeUsuario!="") 
-			echo '<li class="nav-item"><a class="nav-link" href="/painel.php">Bem vindo,$nomeUsuario</a> | <a class="nav-link" href="/sair.php">Sair </a> </li>';
+			echo '<li class="nav-item pt-2"><a  href="/painel.php">Bem vindo '.$nomeUsuario.'</a> | <a href="/sair.php">Sair </a> </li>';
 			else 
 			echo '<li class="nav-item"><a class="nav-link"href="/conta.php">Faça seu login</a></li>';
 	

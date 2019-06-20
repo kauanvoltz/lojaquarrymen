@@ -8,20 +8,40 @@
 	</head>
 	<body>
 		<div class="container">
-			<?php
+<?php
 				include "menu.php";
-			?>
-	
-			<div id="divAcessar">
-			<?php
-				include "acessar.php";
-			?>
-			</div>
-			<div class="d-none" id="divRegistrar">
-			<?php
-				include "registrar.php";
-			?>
-			</div>
+				
+				include "banco.php";
+		 $sessaoSemUsuario=!isset ($_SESSION['emailUsuario']);
+	if ($sessaoSemUsuario){		
+	if(isset($_POST['txtEmail']) && isset($_POST['txtSenha'])){
+			$txtEmail= $_POST['txtEmail'];
+			$txtSenha= $_POST['txtSenha'];
+			$senhaMd5= md5($txtSenha);
+			if ($resultado= mysqli_query($conexao,'SELECT * FROM `usuarios` WHERE email="'.$txtEmail.'" and senha="'.$senhaMd5.'";'))
+			{
+				if (mysqli_num_rows($resultado))
+				{
+				$usuario= mysqli_fetch_array($resultado);
+				$_SESSION['nomeUsuario']=$usuario["nome"];
+				echo $_SESSION['nomeUsuario'];
+				$_SESSION['emailUsuario']=$txtEmail;
+				$sessaoSemUsuario=false;
+				header("Location: / ");
+				}
+				
+			}
+	}
+	}		
+
+		
+	if($sessaoSemUsuario)
+	{
+		include "acessar.php";
+			
+		include "registrar.php";
+	}
+?>
 		</div>
 		<script src="scripts/jquery-3.3.1.js">
 		 </script>
