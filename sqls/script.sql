@@ -10,6 +10,9 @@ SELECT * FROM `permissoes` WHERE titulo = "admin";
 SELECT * FROM `usuariopermissao` WHERE permissao_id= 1 AND usuario_id=1;
 
 SELECT * from usuarios
-inner JOIN usuariopermissao on usuariopermissao.usuario_id = usuario_id
+inner JOIN usuariopermissao on usuariopermissao.id = usuario_id
 inner join permissoes on permissoes.id = usuariopermissao.permissao_id
 WHERE permissoes.titulo = "admin" and usuarios.email = "kauan.voltz@gmail.com"
+
+SELECT produtos.*,categorias.nome as categoria from produtos
+inner join categorias on categorias.id=categoria_id

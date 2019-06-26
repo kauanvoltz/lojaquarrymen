@@ -21,11 +21,13 @@
 	</div>
 		<script src="../scripts/jquery-3.3.1.js">
 		 </script>
-		 <script src="../scripts/produtos.js">
+		 <script src="../scripts/lazyload.js">
 		 </script>
 		 <script src="../scripts/global.js">
 		 </script>
 		  <script src="../scripts/carrinho.js">
+		 </script>
+		 <script src="../scripts/produtos.js">
 		 </script>
 	
 	

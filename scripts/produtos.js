@@ -269,7 +269,7 @@ function formatarTemplate(item){
 					<div class="card-body">
 					
 					<h2 class="card-title">${item.titulo}</h2>
-					<img src="${item.caminhoImagem}" alt="${item.titulo}" width="200" height="200"/>
+					<img class="lazyload" data-src="${item.caminhoImagem}" alt="${item.titulo}" width="200" height="200"/>
 					<p class="card-text">
 					${formatarDescricao(item.descricao)}
 					</p>
@@ -291,4 +291,5 @@ $(function(){
 	$(produtosFiltrados).each(function(index,item){
 		 $(".row").append(formatarTemplate(item));
 	});
+	lazyload();
 });

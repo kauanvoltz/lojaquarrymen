@@ -1,0 +1,5 @@
+1- criar o arquivo lazyload.js
+2 - inserir a tag script que chame o arquivo lazyload.js onde precisa carregar as imagens
+3 - colocar a classe lazyload na tag img
+4 - trocar os src pelo data-src na tag img
+5 - chamar a função de lazyload() depois que todos os elementos de imagem carregados estiverem
